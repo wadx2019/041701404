@@ -210,8 +210,7 @@ def Split5(raw):
         return "error"
 
 if __name__ == '__main__':
-    print(os.path.abspath('.'))
-    json_file = open(r'/db.json', 'rb')
+    json_file = open(r'db.json', 'rb')
     data = json_file.read()
     json_list = json.loads(data)
     input_info =input()
