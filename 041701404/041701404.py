@@ -1,6 +1,4 @@
-import sys,os
-sys.stdin=open(r'C:\Users\HP\Documents\Tencent Files\2780334265\FileRecv\Dubhe2.0\tmp.txt','r',encoding='utf-8')
-sys.stdout=open(r'C:\Users\HP\Documents\Tencent Files\2780334265\FileRecv\Dubhe2.0\json_file\031702148.json','a+',encoding='utf-8')
+import os
 import json
 import jsonpath
 import re
@@ -212,7 +210,7 @@ def Split5(raw):
         return "error"
 
 if __name__ == '__main__':
-	print(os.curdir+"1")
+    print(os.curdir+"1")
     json_file = open(r'041701404\db.json', 'rb')
     data = json_file.read()
     json_list = json.loads(data)
@@ -258,7 +256,4 @@ if __name__ == '__main__':
     except:
         pass
 
-
-sys.stdout.close()
-sys.stdin.close()
 
